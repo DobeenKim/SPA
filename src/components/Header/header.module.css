@@ -1,0 +1,22 @@
+.header {
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: row;
+  gap: 8px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.text {
+  font-size: 11px;
+  color: var(--text-color02);
+}
+
+.img {
+  width: 80px;
+}

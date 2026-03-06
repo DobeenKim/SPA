@@ -1,0 +1,9 @@
+.btn {
+  border-bottom: 2px solid var(--text-color02);
+  width: fit-content;
+}
+
+.btn:hover {
+  color: var(--point-color);
+  border-bottom: 2px solid var(--point-color);
+}

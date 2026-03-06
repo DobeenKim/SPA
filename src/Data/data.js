@@ -1,0 +1,15 @@
+export const ramenList = [
+  { id: 1,  name: "Chapagetti",          brand: "Nongshim", country: "South Korea", spiciness: 1, img: "/images/chapagetti.avif" },
+  { id: 2,  name: "Cup Noodle Curry",    brand: "Nissin",   country: "Japan",       spiciness: 1, img: "/images/cupNoodle.png" },
+  { id: 3,  name: "Ichiran Ramen",       brand: "Ichiran",  country: "Japan",       spiciness: 3, img: "/images/ichiran.png" },
+  { id: 4,  name: "Jin Ramen Mild",      brand: "Ottogi",   country: "South Korea", spiciness: 1, img: "/images/jinramen.png" },
+  { id: 5,  name: "Jin Ramen Spicy",     brand: "Ottogi",   country: "South Korea", spiciness: 3, img: "/images/jinramenSpicy.png" },
+  { id: 6,  name: "Mama Pho",            brand: "Mama",     country: "Thailand",    spiciness: 2, img: "/images/pho.png" },
+  { id: 7,  name: "Shin Ramyun Black",   brand: "Nongshim", country: "South Korea", spiciness: 4, img: "/images/shinramenBlack.png" },
+  { id: 8,  name: "Shin Ramyun Original",brand: "Nongshim", country: "South Korea", spiciness: 3, img: "/images/shinramen.png" },
+  { id: 9,  name: "Tanuki Soba",         brand: "Nissin",   country: "Japan",       spiciness: 1, img: "/images/tanukisoba.png" },
+  { id: 10, name: "Donbei Kitsune Udon", brand: "Nissin",   country: "Japan",       spiciness: 1, img: "/images/Donbei_Kitsune_Udon.png" },
+  { id: 11, name: "UFO Ramen",           brand: "Nissin",   country: "Japan",       spiciness: 2, img: "/images/ufo-Photoroom.png" },
+  { id: 12, name: "Yukgaejang",     brand: "Nongshim", country: "South Korea", spiciness: 2, img: "/images/yukgejang.png" },
+  { id: 13, name: "Buldak Bokkeum Myeon", brand: "Samyang",  country: "South Korea", spiciness: 5, img: "/images/buldak.png" },
+];

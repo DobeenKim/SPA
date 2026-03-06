@@ -1,0 +1,42 @@
+.btn {
+  border: 2px solid var(--text-color02);
+  border-radius: 10px;
+  width: 8.625rem;
+  min-height: 12.375rem;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+@media (min-width: 390px) {
+  .btn {
+    width: 10.5rem;
+  }
+
+  .img {
+    height: 143px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    width: 14.5rem;
+    height: 17rem;
+  }
+
+  .img {
+    height: 210px;
+  }
+}
