@@ -8,12 +8,17 @@ const DetailInfo = ({info, updateDetailInfo}) => {
 
   return (
     <div className={styles.detailInfo}>
-      <div className={styles.btn} onClick={handliClick}>Back</div>
+      <p className={styles.btn} onClick={handliClick}>Back</p>
       <p className={styles.img}><img src={info.img} alt={info.name} /></p>
-      <h2 className={styles.name}>{info.name}</h2>
-      <p className={styles.info}>Brand :{info.brand}</p>
-      <p className={styles.info}>Spiciness :{info.spiciness}</p>
-      <p className={styles.info}>From :{info.country}</p>
+      <div className={styles.lnfoBox}>
+        <h2 className={styles.info}>{info.name}</h2>
+        <p className={styles.info}>Brand :{info.brand}</p>
+        {info.spiciness > 0 && 
+          <p className={styles.info}>Spiciness :{info.spiciness}</p>
+        }
+        <p className={styles.info}>From :{info.country}</p>
+        
+      </div>
     </div>
   )
 }

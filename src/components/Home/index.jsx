@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./home.module.css";
 import Header from "../Header";
-import { ramenList } from "../../Data/data.js";
+import { productList } from "../../Data/data.js";
 import PickBestItem from "../PickBestItem";
 import DetailInfo from "../DetailInfo";
 import mainImg from '../../assets/images/main.png'
@@ -10,11 +10,8 @@ import mainImg from '../../assets/images/main.png'
 const Home = () => {
   const [favoriteItem, setFavoriteItem] = useState(null)
 
-  const bestPickName = ["Shin Ramyun Black", "Yukgaejang", "Mama Pho", "Donbei Kitsune Udon"];
-  const bestPickItem = ramenList.filter(item=> bestPickName.includes(item.name));
-
-
-
+  const bestPickName = ["Shin Ramyun Black", "Yukgaejang", "Mama Pho", "Donbei Kitsune Udon","Ichiran Ramen"];
+  const bestPickItem = productList.filter(item=> bestPickName.includes(item.name));
 
   return (
     <div className={styles.homeContainer}>

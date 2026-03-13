@@ -1,6 +1,18 @@
+.detailInfo {
+  width: 70%;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.lnfoBox {
+  text-align: center;
+  width: 100%;
+}
+
 .btn {
-  border-bottom: 2px solid var(--text-color02);
   width: fit-content;
+  border-bottom: 2px solid;
+  margin: 0 auto;
 }
 
 .btn:hover {
