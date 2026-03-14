@@ -11,7 +11,7 @@ const DetailInfo = ({info, updateDetailInfo}) => {
       <p className={styles.btn} onClick={handliClick}>Back</p>
       <p className={styles.img}><img src={info.img} alt={info.name} /></p>
       <div className={styles.lnfoBox}>
-        <h2 className={styles.info}>{info.name}</h2>
+        <h2 className={styles.name}>{info.name}</h2>
         <p className={styles.info}>Brand :{info.brand}</p>
         {info.spiciness > 0 && 
           <p className={styles.info}>Spiciness :{info.spiciness}</p>

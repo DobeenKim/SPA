@@ -13,7 +13,8 @@
 }
 
 .title {
-  font-size: 36px;
+  font-size: 32px;
+  line-height: 1;
 }
 
 .text {
@@ -26,11 +27,30 @@
 }
 
 @media (min-width: 768px) {
+  .header {
+    align-items: center;
+    padding: 32px 0 150px;
+    width: 100%;
+    gap: 0;
+  }
+
   .br {
     display: none;
   }
 
+  .textBox {
+    flex: 1;
+  }
+
+  .title {
+    font-size: 100px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
   .img {
-    width: 200px;
+    width: 150px;
   }
 }

@@ -11,7 +11,7 @@ const PickBestItem = ({item, updateItem}) => {
     <div onClick={handleClick} className={styles.btn}>
       <div className={styles.card}>
         <p className={styles.img}><img src={item.img} alt={item.name} /></p>
-        <h3 className={styles.name}>{item.name}</h3>
+        <p className={styles.name}>{item.name}</p>
       </div>
     </div>
   )

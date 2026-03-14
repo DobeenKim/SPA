@@ -2,11 +2,31 @@
   width: 70%;
   margin: 0 auto;
   padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.img {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .lnfoBox {
   text-align: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  font-size: 16px;
+}
+
+.info {
+  font-size: 12px;
+  margin: 0px;
 }
 
 .btn {

@@ -18,20 +18,24 @@ const Home = () => {
       <div className={styles.wrap}>
         <Header />
         <div className={styles.backgroundImg}>
-          <h2 className={styles.text}>My favorite <br />Items!</h2>
+          <h2 className={styles.text}>My favorite <br className={styles.br} />Items!</h2>
           <p className={styles.img}>
             <img src={mainImg} alt="main img" />
           </p>
         </div>
-        <h2 className={styles.title}>BEST PICK <br /></h2>
-        {favoriteItem && <DetailInfo info={favoriteItem} updateDetailInfo={setFavoriteItem} />}
-        {!favoriteItem &&
-          <div className={styles.bestPick}>
-            {bestPickItem.map((item, index) => 
-            <PickBestItem key={index} item={item} updateItem={setFavoriteItem} />
-          )}
+        <div className={styles.bestPickContainer}>
+          <h2 className={styles.title}>BEST PICK <br /></h2>
+          {favoriteItem && <DetailInfo info={favoriteItem} updateDetailInfo={setFavoriteItem} />}
+          {!favoriteItem &&
+            <div className={styles.bestPick}>
+              <div className={styles.bestPickWrap}>
+                {bestPickItem.map((item, index) => 
+                <PickBestItem key={index} item={item} updateItem={setFavoriteItem} />
+                )}
+              </div>
+            </div>
+          }
         </div>
-        }
       </div>
     </div>
   )
