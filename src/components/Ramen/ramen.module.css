@@ -4,21 +4,26 @@
 
 .wrap {
   width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
   font-size: 0.75rem;
   margin: 0 auto;
   justify-content: center;
+  padding: 40px 0;
 }
 
 .item {
   border: 2px solid var(--text-color02);
   border-radius: 10px;
-  width: 120px;
+  width: 140px;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
+}
+
+.item:nth-child(8) .img {
+  width: 80px;
 }
 
 .img {
@@ -36,4 +41,19 @@
   .item {
     width: 10.5rem;
   }
+}
+
+@media (min-width: 1920px) {
+  .wrap {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .item {
+    width: 240px;
+    height: 335px;
+  }
+
+  .item:nth-child(8) .img {
+  width: 140px;
+}
 }

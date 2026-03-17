@@ -4,12 +4,13 @@
 
 .wrap {
   width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
   font-size: 0.75rem;
   margin: 0 auto;
   justify-content: center;
+  padding: 40px 0;
 }
 
 .item {

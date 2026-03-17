@@ -1,5 +1,5 @@
 .detailInfo {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
   padding: 24px 0;
   display: flex;
@@ -38,4 +38,41 @@
 .btn:hover {
   color: var(--point-color);
   border-bottom: 2px solid var(--point-color);
+}
+
+@media (min-width: 768px) {
+  .detailInfo {
+    width: 60%;
+  }
+  
+  .btn {
+    width: 14rem;
+    width: fit-content;
+  }
+}
+
+@media (min-width: 1920px) {
+  .detailInfo {
+    width: 40%;
+  }
+
+  .infoBox {
+    gap: 16px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .info {
+    font-size: 32px;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .img {
+    padding: 40px 0;
+  }
 }

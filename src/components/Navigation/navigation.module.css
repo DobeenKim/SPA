@@ -72,5 +72,22 @@
   .menuIcon {
     display: none ;
   }
+}
 
+@media (min-width: 1920px) {
+  .navigation {
+    padding: 30px 160px;
+  }
+  .logo {
+    font-size: 64px;
+  }
+
+  .nav {
+    gap: 45px;
+    line-height: 2.5;
+  }
+
+  .navItem {
+    font-size: 32px;
+  }
 }

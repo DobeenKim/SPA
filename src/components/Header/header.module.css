@@ -54,3 +54,27 @@
     width: 150px;
   }
 }
+
+@media (min-width: 1920px) {
+  .title {
+    font-size: 200px;
+  }
+
+  .header {
+    padding: 170px 68px 415px 68px;
+  }
+
+  .img {
+    width: 370px;
+  }
+
+  .text {
+    font-size: 32px;
+  }
+
+  .textBox {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
