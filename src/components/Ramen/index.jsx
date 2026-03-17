@@ -1,4 +1,4 @@
-import styles from './Ramen.module.css'
+import styles from './ramen.module.css'
 import { productList } from "../../Data/data.js";
 import { useState } from 'react';
 import DetailInfo from '../DetailInfo';
