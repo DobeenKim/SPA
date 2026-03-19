@@ -20,6 +20,11 @@
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+}
+
+.item:hover {
+  border: 2px solid #aa4eeb;
 }
 
 .item:nth-child(8) .img {
@@ -43,17 +48,40 @@
   }
 }
 
+@media (min-width: 768px) {
+  .wrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .img {
+    width: 70%;
+  }
+
+  .item:nth-child(2) .img,
+  .item:nth-child(3) .img {
+    width: 60%;
+  }
+}
+
 @media (min-width: 1920px) {
   .wrap {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .item {
-    width: 240px;
+    width: 335px;
     height: 335px;
   }
 
   .item:nth-child(8) .img {
-  width: 140px;
-}
+    width: 140px;
+  }
+
+  .img {
+    height: 100%;
+  }
+
+  .name {
+    font-size: 24px;
+  }
 }

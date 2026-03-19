@@ -3,6 +3,11 @@
   border-radius: 10px;
   width: 100%;
   min-height: 12.375rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid #aa4eeb;
 }
 
 .card {
